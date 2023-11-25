@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEME-MAKER</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="color" id="color" />
+                </td>
+            </tr>
+        </tbody>
+        <tbody class="color-options">
+            <tr>
+                <td>
+                    <div class="color-option" style="background-color: #f6e58d;" data-color="#f6e58d"></div>
+                </td>
+                <td>
+                    <div class="color-option" style="background-color: #ffbe76;" data-color="#ffbe76"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="color-option" style="background-color:#ff7979 ;" data-color="#ff7979"></div>
+                </td>
+                <td>
+                    <div class="color-option" style="background-color: #badc58;" data-color="#badc58"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="color-option" style="background-color:#dff9fb ;" data-color="#dff9fb"></div>
+                </td>
+                <td>
+                    <div class="color-option" style="background-color: #f9ca24;" data-color="#f9ca24"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="color-option" style="background-color: #f0932b;" data-color="#f0932b"></div>
+                </td>
+                <td>
+                    <div class="color-option" style="background-color: #eb4d4b;" data-color="#eb4d4b"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="color-option" style="background-color: #6ab04c;" data-color="#6ab04c"></div>
+                </td>
+                <td>
+                    <div class="color-option" style="background-color: #c7ecee;" data-color="#c7ecee"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="color-option" style="background-color: #7ed6df;" data-color="#7ed6df"></div>
+                </td>
+                <td>
+                    <div class="color-option" style="background-color:#e056fd ;" data-color="#e056fd"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="color-option" style="background-color: #686de0;" data-color="#686de0"></div>
+                </td>
+                <td>
+                    <div class="color-option" style="background-color: #30336b;" data-color="#30336b"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="color-option" style="background-color: #95afc0;" data-color="#95afc0"></div>
+                </td>
+                <td>
+                    <div class="color-option" style="background-color: #22a6b3;" data-color="#22a6b3"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="color-option" style="background-color: #be2edd;" data-color="#be2edd"></div>
+                </td>
+                <td>
+                    <div class="color-option" style="background-color: #4834d4;" data-color="#4834d4"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="color-option" style="background-color: #130f40;" data-color="#130f40"></div>
+                </td>
+                <td>
+                    <div class="color-option" style="background-color: #535c68;" data-color="#535c68"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <canvas>
+    </canvas>
+    <div id="btns">
+        <div id="pencil-width-box">
+            <span>Pencil Width</span>
+            <input id="line-width" type="range" min="1" 
+            max="10" value="5" step="0.5"/>
+        </div>
+        <button id="mode-btn">🫗Fill</button>
+        <button id="destroy-btn">🧨Destroy</button>
+        <button id="eraser-btn">❌Eraser</button>
+        <label for="file">
+            Add Photo
+            <input type="file" accept="image/*" id="file" />
+        </label>
+        <div id="text-box">
+            <div id="font-box">
+                <input type="text" value="5"/>
+                <div class="font-box__btns">
+                    <button class="text-box__font-btn">🔼</button>
+                    <button class="text-box__font-btn">🔽</button>
+                </div>
+                <button class="toggle-btn bold toggle">Bold</button>
+                <button class="toggle-btn fill-stroke toggle">Fill</button>
+            </div>
+            <select id="combo_font"></select>
+            <input type="text" placeholder="Add text here... :)" id="text" />
+        </div>
+        <button id="save">💽Save image</button>
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>
